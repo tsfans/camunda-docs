@@ -78,7 +78,7 @@ The multi-instance activity can be marked as sequential or parallel and defines 
 
 When a process instance enters a compensation intermediate throw or end event, it triggers the compensation of the current scope and invokes the compensation handlers of completed activities.
 
-After the current scope, it triggers the compensation for the child scopes recursively. As a result, it should invoke the compensation handlers in completed [embedded subprocesses](/components/modeler/bpmn/embedded-subprocess/embedded-subprocess.md). If a subprocess is not completed (i.e. still active or terminated), the compensation handlers within the subprocess should not be invoked.
+After the current scope, it triggers the compensation for the child scopes recursively. As a result, it should invoke the compensation handlers in completed [embedded subprocesses](/components/modeler/bpmn/embedded-subprocesses/embedded-subprocesses.md). If a subprocess is not completed (i.e. still active or terminated), the compensation handlers within the subprocess should not be invoked.
 
 ![Process with embedded subprocesses](assets/compensation-embedded-subprocess.gif)
 
